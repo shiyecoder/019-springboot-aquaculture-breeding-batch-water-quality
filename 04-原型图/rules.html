@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><title>水质风险规则 · 水产养殖批次与水质监测管理系统</title>
+<link rel="stylesheet" href="mock.css"></head><body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><i>渔</i>养殖管理平台</div>
+    <nav class="menu"><a href="dashboard.html"><span class="dot"></span>养殖批次看板</a><div class="grp">养殖作业</div><a href="ponds.html"><span class="dot"></span>塘口总览</a><a href="batches.html"><span class="dot"></span>养殖批次</a><a href="feeding.html"><span class="dot"></span>投喂计划</a><a href="water.html"><span class="dot"></span>水质监测</a><div class="grp">风险与病害</div><a href="warnings.html"><span class="dot"></span>风险预警中心</a><a href="disease.html"><span class="dot"></span>病害用药</a><div class="grp">产出管理</div><a href="harvest.html"><span class="dot"></span>分塘与起捕</a><div class="grp">规则中心</div><a href="rules.html" class="on"><span class="dot"></span>水质风险规则</a><div class="grp">协同</div><a href="messages.html"><span class="dot"></span>消息中心</a><a href="profile.html"><span class="dot"></span>个人中心</a><div class="grp">系统管理</div><a href="users.html"><span class="dot"></span>用户管理</a><a href="roles.html"><span class="dot"></span>角色管理</a><a href="menus.html"><span class="dot"></span>菜单管理</a><a href="logs.html"><span class="dot"></span>操作日志</a></nav>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <span class="crumb">首页 / 规则中心 / 水质风险规则</span><span class="spacer"></span>
+      <span class="crumb">消息 <b style="color:#AD2E3A">3</b></span>
+      <span class="who"><img class="avatar" src="../uploads/seed/avatar/01.jpg">场长 张海生</span>
+    </header>
+    <div class="content"><div class="page-h"><h1>多参数水质风险分层规则</h1><span class="sub">当前生效 v2 · 权重合计 100%</span><span class="spacer"></span><button class="btn">查看历史版本</button><button class="btn primary">保存为新版本</button></div><div class="grid two" style="grid-template-columns:1fr 1fr">
+  <div class="card"><div class="section-t">因子权重配置</div>
+  <div class="form-row"><label>水温偏差</label><input class="input" value="20" style="width:110px"><span class="crumb">%</span></div>
+  <div class="form-row"><label>pH 偏差</label><input class="input" value="15" style="width:110px"><span class="crumb">%</span></div>
+  <div class="form-row"><label>溶解氧</label><input class="input" value="25" style="width:110px"><span class="crumb">%</span></div>
+  <div class="form-row"><label>氨氮</label><input class="input" value="20" style="width:110px"><span class="crumb">%</span></div>
+  <div class="form-row"><label>亚硝酸盐</label><input class="input" value="15" style="width:110px"><span class="crumb">%</span></div>
+  <div class="form-row"><label>连续异常次数</label><input class="input" value="5" style="width:110px"><span class="crumb">%</span></div>
+  <div class="form-row"><label>合计</label><b class="num" style="color:#2B7A5A">100%</b></div>
+  <div class="note">修改保存后生成新版本，仅影响新计算或主动重新计算的数据；历史快照与规则版本永久保留。</div></div>
+  <div class="card"><div class="section-t">适宜区间（按生长阶段）</div><table><thead><tr><th>参数</th><th>苗期</th><th>中期</th><th>成鱼</th></tr></thead><tbody>
+  <tr><td>水温 ℃</td><td>24~30</td><td>22~31</td><td>18~32</td></tr>
+  <tr><td>pH</td><td>6.8~8.2</td><td>6.6~8.4</td><td>6.5~8.5</td></tr>
+  <tr><td>溶解氧 mg/L</td><td>5~12</td><td>4.5~12</td><td>4~14</td></tr>
+  <tr><td>氨氮 mg/L</td><td>0~0.15</td><td>0~0.2</td><td>0~0.3</td></tr>
+  <tr><td>亚硝酸盐 mg/L</td><td>0~0.08</td><td>0~0.1</td><td>0~0.15</td></tr>
+  </tbody></table><div class="note" style="margin-top:12px">等级阈值：总分 &lt;30 低风险，30~60 中风险，≥60 高风险。</div></div>
+</div>
+<div class="grid three" style="margin-top:14px">
+  <div class="card"><div class="section-t">版本记录</div><table><thead><tr><th>版本</th><th>生效时间</th><th>创建人</th><th>状态</th></tr></thead><tbody><tr><td>v2</td><td>2026-08-01 08:30</td><td>李文娟</td><td><span class="tag ok">生效中</span></td></tr><tr><td>v1</td><td>2026-05-06 09:00</td><td>李文娟</td><td><span class="tag plain">已停用</span></td></tr></tbody></table></div>
+  <div class="card"><div class="section-t">推荐采纳率</div><div style="font-size:30px;color:#284B63;font-weight:600" class="num">83.3<small style="font-size:13px">%</small></div><div class="crumb">120 次计算，20 次人工修正</div><div class="note" style="margin-top:12px">人工修正率 16.7%，主要用于现场已浮头但规则判为中风险的场景。</div></div>
+  <div class="card"><div class="section-t">近 30 天结果分布</div><div class="chart"><div class="bar" style="height:150px" title="低 68"><span>低</span></div><div class="bar" style="height:75px" title="中 34"><span>中</span></div><div class="bar" style="height:39px" title="高 18"><span>高</span></div></div></div>
+</div></div>
+  </div>
+</div></body></html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><title>水质监测 · 水产养殖批次与水质监测管理系统</title>
+<link rel="stylesheet" href="mock.css"></head><body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><i>渔</i>养殖管理平台</div>
+    <nav class="menu"><a href="dashboard.html"><span class="dot"></span>养殖批次看板</a><div class="grp">养殖作业</div><a href="ponds.html"><span class="dot"></span>塘口总览</a><a href="batches.html"><span class="dot"></span>养殖批次</a><a href="feeding.html"><span class="dot"></span>投喂计划</a><a href="water.html" class="on"><span class="dot"></span>水质监测</a><div class="grp">风险与病害</div><a href="warnings.html"><span class="dot"></span>风险预警中心</a><a href="disease.html"><span class="dot"></span>病害用药</a><div class="grp">产出管理</div><a href="harvest.html"><span class="dot"></span>分塘与起捕</a><div class="grp">规则中心</div><a href="rules.html"><span class="dot"></span>水质风险规则</a><div class="grp">协同</div><a href="messages.html"><span class="dot"></span>消息中心</a><a href="profile.html"><span class="dot"></span>个人中心</a><div class="grp">系统管理</div><a href="users.html"><span class="dot"></span>用户管理</a><a href="roles.html"><span class="dot"></span>角色管理</a><a href="menus.html"><span class="dot"></span>菜单管理</a><a href="logs.html"><span class="dot"></span>操作日志</a></nav>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <span class="crumb">首页 / 养殖作业 / 水质监测</span><span class="spacer"></span>
+      <span class="crumb">消息 <b style="color:#AD2E3A">3</b></span>
+      <span class="who"><img class="avatar" src="../uploads/seed/avatar/01.jpg">场长 张海生</span>
+    </header>
+    <div class="content"><div class="page-h"><h1>水质监测</h1><span class="sub">近 30 天 120 条检测 · 合格 86.4%</span><span class="spacer"></span><button class="btn">导出</button><button class="btn primary">+ 新建</button></div><div class="grid two" style="grid-template-columns:1.15fr 1fr;margin-bottom:14px">
+  <div class="card"><div class="section-t">录入水质检测</div>
+  <div class="form-row"><label>养殖批次</label><select class="select"><option>YC202604001 · 一号塘 · 草鱼</option></select></div>
+  <div class="form-row"><label>检测时间</label><input class="input" value="2026-10-31 08:20"></div>
+  <div class="form-row"><label>水温 ℃</label><input class="input" value="25.4" style="width:120px">
+    <label style="width:60px">pH</label><input class="input" value="7.32" style="width:120px"></div>
+  <div class="form-row"><label>溶解氧 mg/L</label><input class="input" value="5.8" style="width:120px">
+    <label style="width:80px">透明度 cm</label><input class="input" value="42" style="width:100px"></div>
+  <div class="form-row"><label>氨氮 mg/L</label><input class="input" value="0.062" style="width:120px">
+    <label style="width:90px">亚硝酸盐</label><input class="input" value="0.021" style="width:100px"></div>
+  <div class="form-row"><label>仪表照片</label><div class="card" style="padding:6px"><img src="../uploads/seed/gauge/01.jpg" style="width:96px;height:72px;object-fit:cover;border-radius:4px"></div><span class="crumb">支持 jpg/png，≤5MB</span></div>
+  <div class="form-row"><label>备注</label><input class="input" placeholder="异常情况说明"></div>
+  <div style="padding-left:122px"><button class="btn primary">保存并计算风险</button> <button class="btn">存草稿</button></div></div>
+  <div class="card"><div class="section-t">最近一次计算结果</div>
+  <div class="note" style="margin-bottom:12px">规则版本 v2 · 生长阶段 苗期 · 计算时间 2026-10-31 08:21 · 结果可复算</div>
+  <div class="score-item"><span class="lb">水温</span><span class="bar"><i style="width:0"></i></span><span class="sc">0</span></div>
+  <div class="score-item"><span class="lb">pH</span><span class="bar"><i style="width:4%"></i></span><span class="sc">4</span></div>
+  <div class="score-item"><span class="lb">溶解氧</span><span class="bar"><i style="width:14%"></i></span><span class="sc">14</span></div>
+  <div class="score-item"><span class="lb">氨氮</span><span class="bar"><i class="bad" style="width:32%"></i></span><span class="sc">32</span></div>
+  <div class="score-item"><span class="lb">亚硝酸盐</span><span class="bar"><i style="width:9%"></i></span><span class="sc">9</span></div>
+  <div class="score-item"><span class="lb">连续异常</span><span class="bar"><i style="width:0"></i></span><span class="sc">0</span></div>
+  <div style="margin-top:14px;font-size:13px">综合得分 <b class="num" style="font-size:22px;color:#2B7A5A">8.6</b> <span class="tag ok">低风险</span></div>
+  <div class="note" style="margin-top:12px">建议：各项指标均在适宜区间，按每日 1 次频次继续监测。</div></div>
+</div><div class="card" style="padding:0"><table><thead><tr><th>记录编号</th><th>塘口</th><th>批次</th><th>检测时间</th><th>水温</th><th>pH</th><th>溶氧</th><th>氨氮</th><th>亚硝酸盐</th><th>判定</th><th>操作</th></tr></thead><tbody><tr><td><a>SZ20261031-120</a></td><td>一号塘</td><td><a>YC202604001</a></td><td>2026-10-31 08:20</td><td><span class="num">25.4</span></td><td><span class="num">7.32</span></td><td><span class="num">5.8</span></td><td><span class="num">0.062</span></td><td><span class="num">0.021</span></td><td><span class="tag ok">正常</span></td><td><a>风险计算</a> · <a>详情</a></td></tr><tr><td><a>SZ20261030-119</a></td><td>二号塘</td><td><a>YC202605002</a></td><td>2026-10-30 09:05</td><td><span class="num">31.2</span></td><td><span class="num">8.72</span></td><td><span class="num">3.4</span></td><td><span class="num">0.268</span></td><td><span class="num">0.132</span></td><td><span class="tag warn">超限</span></td><td><a>风险计算</a> · <a>详情</a></td></tr><tr><td><a>SZ20261029-118</a></td><td>三号塘</td><td><a>YC202605003</a></td><td>2026-10-29 07:50</td><td><span class="num">24.8</span></td><td><span class="num">7.18</span></td><td><span class="num">6.1</span></td><td><span class="num">0.041</span></td><td><span class="num">0.018</span></td><td><span class="tag ok">正常</span></td><td><a>风险计算</a> · <a>详情</a></td></tr><tr><td><a>SZ20261028-117</a></td><td>四号塘</td><td><a>YC202606004</a></td><td>2026-10-28 08:30</td><td><span class="num">33.9</span></td><td><span class="num">9.12</span></td><td><span class="num">2.2</span></td><td><span class="num">0.482</span></td><td><span class="num">0.228</span></td><td><span class="tag bad">严重</span></td><td><a>风险计算</a> · <a>详情</a></td></tr><tr><td><a>SZ20261027-116</a></td><td>五号塘</td><td><a>YC202607005</a></td><td>2026-10-27 09:12</td><td><span class="num">26.1</span></td><td><span class="num">7.44</span></td><td><span class="num">5.2</span></td><td><span class="num">0.088</span></td><td><span class="num">0.032</span></td><td><span class="tag ok">正常</span></td><td><a>风险计算</a> · <a>详情</a></td></tr></tbody></table></div><div class="pager">共 <b class="num">120</b> 条 · 每页 <select class="select" style="width:78px;min-width:0;height:30px"><option>10</option><option>20</option></select> <span class="btn" style="padding:4px 9px">上一页</span><b>1</b><span class="btn" style="padding:4px 9px">下一页</span></div></div>
+  </div>
+</div></body></html>
